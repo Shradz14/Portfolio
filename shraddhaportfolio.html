@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shraddha Joshi - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts - Poppins -->
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap' rel='stylesheet'>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            opacity: 0;
+            transition: opacity 3s;
+            background-color: #f4f4f4; /* Light background color */
+            color: #333; /* Dark text color */
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #2c3e50; /* Dark background color */
+            color: #ecf0f1; /* Light text color */
+        }
+
+        .nav .logo img {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .nav .logo h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .nav .link ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav .link ul li {
+            margin-right: 20px;
+        }
+
+        .nav .link ul a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: #ecf0f1; /* Light text color */
+            transition: color 0.3s ease-in-out;
+        }
+
+        ul a.active,
+        .nav .link ul a:hover {
+            color: #3498db; /* Accent color */
+        }
+
+        .main {
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .main img {
+            border-radius: 50%;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .main .main-detail {
+            text-align: center;
+        }
+
+        .main .main-detail p {
+            font-size: 16px;
+            color: #555; /* Medium color */
+            margin-bottom: 10px;
+        }
+
+        .main .main-detail h1 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #333; /* Dark color */
+            margin-bottom: 10px;
+        }
+
+        .main .main-detail h4 {
+            font-size: 20px;
+            font-weight: 500;
+            color: #555; /* Medium color */
+            margin-bottom: 20px;
+        }
+
+        .main .btn button {
+            padding: 10px 20px;
+            background: #3498db; /* Accent color */
+            border-radius: 30px;
+            border: none;
+            color: #ecf0f1; /* Light text color */
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .main .btn button:hover {
+            background: #2980b9; /* Darker accent color on hover */
+        }
+
+        .social i {
+            color: #333; /* Dark color */
+            font-size: 24px;
+            margin: 0px 14px;
+            transition: color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .social i:hover {
+            color: #3498db; /* Accent color on hover */
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .service {
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .service h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333; /* Dark color */
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 16px;
+            color: #555; /* Medium color */
+        }
+    </style>
+</head>
+<body onload="document.body.style.opacity='1'">
+    <div class="hero">
+        <div class="nav">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+                <h2>Shraddha Joshi - Portfolio</h2>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="#" class="active">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <img src="images/image.jpg" alt="Shraddha Joshi" height="200" width="200" class="img-fluid">
+            <div class="main-detail">
+                <h4>Hello!</h4>
+                <h4>I am Shraddha Joshi</h4>
+                <p>Welcome to my Portfolio!</p>
+
+                <div class="row">
+                    <div class="service">
+                        <h2>Education</h2>
+                        <p>Schooling: Jnana Prabodhini <br> Asm CSIT Pune <br> College: Pimpri Chinchwad College Of Engineering </p>
+                    </div>
+                    <div class="service">
+                        <h2>Projects</h2>
+                        <p>Attendance Monitor using IR sensor <br> Automatic Irrigation System</p>
+                    </div>
+                    <div class="service">
+                        <h2>Skills</h2>
+                        <p>PCB Design <br> Python <br> C++ <br> Java <br> HTML, CSS</p>
+                    </div>
+                    <div class="service">
+                        <h2>Hobbies</h2>
+                        <p>Reading <br> Sketching <br

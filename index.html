@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <style>
+      body {
+        background-color: #222;
+        color: #fff;
+      }
+
+      .navbar {
+        background-color: #333;
+      }
+
+      .jumbotron {
+        background-color: #444;
+      }
+
+      .section {
+        background-color: #555;
+      }
+
+      .card {
+        background-color: #666;
+      }
+
+      .form-control {
+        background-color: #777;
+        color: #fff;
+      }
+
+      .btn-primary {
+        background-color: #888;
+        color: #fff;
+      }
+
+      footer {
+        background-color: #333;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .animated {
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      /* Additional Styles */
+      .about-image img {
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        height: 300px;
+        width: 400px;
+        border: 2px solid #fff; /* Add border to the image */
+      }
+      /* Update Colors */
+      .jumbotron {
+        background-color: #007bff;
+      }
+
+      .section {
+        background-color: #f8f9fa;
+      }
+
+      .card {
+        background-color: #000;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-control {
+        background-color: #f8f9fa;
+        color: #000;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rest of the code remains the same -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="jumbotron jumbotron-fluid text-center bg-primary text-white animated"
+    >
+      <div class="container">
+        <h1 class="display-4">Welcome to My Portfolio</h1>
+        <p class="lead">Explore my work and get in touch!</p>
+      </div>
+    </header>
+
+    <section id="about" class="section py-5 bg-dark text-white animated">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="mb-4">About Me</h2>
+            <p>
+              Skills: Proficient in Python, MATLAB, and C++. Experienced in machine learning, deep learning, and web development.
+
+Projects:
+
+Automatic Pet Feeder: Designed and implemented an automated pet feeder system.
+Real-Time Object Tracking: Developed a real-time object tracking application.
+Additional Projects: Various projects showcasing skills in web development and engineering.
+Learning Journey: Actively pursuing knowledge in data science, machine learning, and deep learning through courses and self-study.
+
+Future Goals: Aspiring to apply data science skills in diverse industries and continue exploring new technologies.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="about-image">
+              <img src="img.JPG" alt="About Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section py-5 bg-dark animated">
+      <div class="container">
+        <h2 class="mb-4 text-white">Projects</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h3 class="card-title text-white">Project 1</h3>
+                <p class="card-text text-white">Automatic Pet feeder</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h3 class="card-title text-white">Project 2</h3>
+                <p class="card-text text-white">Real time object tracking.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section py-5 bg-dark text-white animated">
+      <div class="container">
+        <h2 class="mb-4">Contact</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+   
+  </body>
+</html>
